@@ -4,8 +4,7 @@ const path = require('path');
 const crypto = require('crypto');
 const { DatabaseSync } = require('node:sqlite');
 
-const PORT = process.env.PORT || 3000;
-const PUBLIC = path.join(__dirname, 'public');
+const PORT = process.env.PORT || 3000;const PUBLIC = __dirname;
 const DATA = path.join(__dirname, 'data');
 const DB = path.join(DATA, 'teachers-day.sqlite');
 if (!fs.existsSync(DATA)) fs.mkdirSync(DATA);
